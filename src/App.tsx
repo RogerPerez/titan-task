@@ -1,10 +1,10 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { store } from './store/store';
-import MoviesPage from './pages/MoviesPage';
-import FavoritesPage from './pages/FavoritesPage';
-import Navigation from './components/Navigation';
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { store } from "./store/store";
+import MoviesPage from "./pages/MoviesPage";
+import FavoritesPage from "./pages/FavoritesPage";
+import Navigation from "./components/Navigation";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MoviesPage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
       </Router>

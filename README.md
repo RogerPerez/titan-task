@@ -96,4 +96,4 @@ npm run test:coverage
 
 ## License
 
-This project is licensed under the RPL-1.0 License - see the LICENSE file for details
+This project is licensed under the [RPL-1.0 License](./LICENSE) - see the LICENSE file for details
